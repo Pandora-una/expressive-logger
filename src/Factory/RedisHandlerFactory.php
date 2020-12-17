@@ -32,7 +32,7 @@ final class RedisHandlerFactory
         }
 
         $key = $redisConfig['key'] ?? 'default';
-        $level = $redisConfig['key'] ?? Logger::DEBUG;
+        $level = $redisConfig['level'] ?? Logger::DEBUG;
 
         return new RedisHandler($redisClient, $key, $level);
     }
