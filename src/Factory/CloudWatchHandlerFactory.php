@@ -37,7 +37,7 @@ final class CloudWatchHandlerFactory
         $retention = $cloudwatchConfig['retention'] ?? 14;
         $batchSize = $cloudwatchConfig['batchSize'] ?? 10000;
         $tags = $cloudwatchConfig['tags'] ?? [];
-        $level = $cloudwatchConfig['level'] ?? [];
+        $level = $cloudwatchConfig['level'] ?? Logger::DEBUG;
         $bubble = $cloudwatchConfig['bubble'] ?? true;
         $createGroup = $cloudwatchConfig['createGroup'] ?? true;
         
