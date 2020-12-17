@@ -1,5 +1,5 @@
 {
-  "name": "davidburger/expressive-logger",
+  "name": "pandora-una/expressive-logger",
   "description": "Monolog Zend Expressive integration",
   "type": "library",
   "keywords": [
@@ -19,7 +19,7 @@
   ],
   "require": {
     "php": ">=7.0.0",
-    "monolog/monolog": "^1.19",
+    "monolog/monolog": "^2.0",
     "psr/log": "^1.0",
     "container-interop/container-interop": "^1.1"
   },
