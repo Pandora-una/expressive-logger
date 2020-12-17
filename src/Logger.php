@@ -120,8 +120,12 @@ class Logger
         return $reflectionClass->newInstanceArgs($args);
     }
 
-    private function setHandlerFromConfig(string $name, array $handler) : self
+    private function setHandlerFromConfig(string $name, ?array $handler) : self
     {
+        if (is_null($handler)) {
+            return $this;
+        }
+        
         $handlerInstance = $this->getHandlerInstance($name, $handler);
 
         if (false === empty($handler['formatter'])) {
