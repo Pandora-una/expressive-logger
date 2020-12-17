@@ -12,7 +12,7 @@ use Aws\CloudWatchLogs\CloudWatchLogsClient;
 final class CloudWatchHandlerFactory
 {
 
-    public function __invoke(ContainerInterface $container) : RedisHandler
+    public function __invoke(ContainerInterface $container) : CloudWatch
     {
         $config = $container->get('config');
 
