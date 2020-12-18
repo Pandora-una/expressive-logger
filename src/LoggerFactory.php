@@ -14,7 +14,7 @@ class LoggerFactory
 
         /* Get handlers object from factory */
         foreach ($handlersInConfig as $name => $handler) {
-            if ($container->has($handler['class'])) {
+            if ((!is_null($handler)) && ($container->has($handler['class']))) {
                 $handlers[$name] = $container->get($handler['class']);
             }
         }
