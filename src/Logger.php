@@ -250,7 +250,7 @@ class Logger
      * @param int $level
      * @return bool|null
      */
-    private function getFormattedError(MessageFormatterInterface $formatter, $message, $context = [], $level)
+    private function getFormattedError(MessageFormatterInterface $formatter, $message, $context = [], $level = \Monolog\Logger::ERROR)
     {
         $context = $formatter->context($message, $context);
         $error = $formatter->format($message);
