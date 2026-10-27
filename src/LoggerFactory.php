@@ -2,7 +2,7 @@
 
 namespace ExpressiveLogger;
 
-use Interop\Container\ContainerInterface;
+use Psr\Container\ContainerInterface;
 
 class LoggerFactory
 {

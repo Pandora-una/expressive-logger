@@ -3,7 +3,7 @@
 namespace ExpressiveLogger\Factory;
 
 use ExpressiveLogger\Exception\InvalidConfigurationException;
-use Interop\Container\ContainerInterface;
+use Psr\Container\ContainerInterface;
 use Maxbanton\Cwh\Handler\CloudWatch;
 use Monolog\Logger;
 use Aws\CloudWatchLogs\CloudWatchLogsClient;
