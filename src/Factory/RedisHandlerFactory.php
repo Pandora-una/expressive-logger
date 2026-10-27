@@ -3,7 +3,7 @@
 namespace ExpressiveLogger\Factory;
 
 use ExpressiveLogger\Exception\InvalidConfigurationException;
-use Interop\Container\ContainerInterface;
+use Psr\Container\ContainerInterface;
 use Monolog\Handler\RedisHandler;
 use Monolog\Logger;
 use Predis\Client;
